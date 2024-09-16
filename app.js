@@ -15,7 +15,10 @@ const app = express();
 app.set('view engine', 'ejs');
 
 // Configuração de CORS (deve vir antes das rotas)
-app.use(cors({credentials: true}));
+//app.use(cors({credentials: true}));
+
+app.use(cors());
+
 
 // Middlewares
 app.use(express.json());
