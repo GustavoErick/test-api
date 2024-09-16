@@ -17,13 +17,13 @@ app.set('view engine', 'ejs');
 // Configuração de CORS (deve vir antes das rotas)
 //app.use(cors({credentials: true}));
 
-//app.use(cors());
+app.use(cors());
 
-app.use(cors({
-    origin: 'https://test-api-ten-pink.vercel.app',
-    methods: 'GET, POST, PUT, DELETE', // Métodos HTTP permitidos
-    credentials: true, // Permite envio de cookies
-  }));
+// app.use(cors({
+//     origin: 'https://test-api-ten-pink.vercel.app',
+//     methods: 'GET, POST, PUT, DELETE', // Métodos HTTP permitidos
+//     credentials: true, // Permite envio de cookies
+//   }));
 
 
 // Middlewares
