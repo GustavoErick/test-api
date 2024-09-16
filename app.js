@@ -20,8 +20,9 @@ app.set('view engine', 'ejs');
 //app.use(cors());
 
 app.use(cors({
-    origin: 'https://test-bq5i8l4c9-gustavo-ericks-projects.vercel.app/',
-    credentials: true
+    origin: 'http://localhost:5173' || 'https://test-api-ten-pink.vercel.app',
+    methods: 'GET, POST, PUT, DELETE', // Métodos HTTP permitidos
+    credentials: true, // Permite envio de cookies
   }));
 
 
