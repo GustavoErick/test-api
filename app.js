@@ -15,7 +15,14 @@ const app = express();
 app.set('view engine', 'ejs');
 
 // Configuração de CORS (deve vir antes das rotas)
-app.use(cors({credentials: true}));
+// app.use(cors({credentials: true}));
+
+app.use(cors({
+    origin: ['https://test-api-ten-pink.vercel.app/', 'http://localhost:5173'], // Adicione seus domínios
+    methods: ['GET', 'POST', 'PUT', 'DELETE'],
+    credentials: true,
+}));
+
 
 // app.use(cors());
 
