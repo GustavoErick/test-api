@@ -17,7 +17,12 @@ app.set('view engine', 'ejs');
 // Configuração de CORS (deve vir antes das rotas)
 //app.use(cors({credentials: true}));
 
-app.use(cors());
+//app.use(cors());
+
+app.use(cors({
+    origin: 'https://test-bq5i8l4c9-gustavo-ericks-projects.vercel.app/',
+    credentials: true
+  }));
 
 
 // Middlewares
