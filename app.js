@@ -18,7 +18,7 @@ app.set('view engine', 'ejs');
 // app.use(cors({credentials: true}));
 
 app.use(cors({
-    origin: ['https://test-api-ten-pink.vercel.app/', 'http://localhost:5173'], // Adicione seus domínios
+    origin: ['https://test-api-ten-pink.vercel.app/', 'http://localhost:5173', 'https://main--wtisc.netlify.app/'], // Adicione seus domínios
     methods: ['GET', 'POST', 'PUT', 'DELETE'],
     credentials: true,
 }));
