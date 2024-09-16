@@ -1,17 +1,20 @@
-{ 
-    "version": 2, 
+{
+    "version": 2,
     "builds": [
-        {
-            "src": "./app.js",
-            "use": "@vercel/node"
-        }
+      {
+        "src": "./app.js",
+        "use": "@vercel/node"
+      }
     ],
     "routes": [
-    {
-      "src": "/(.*)",
-      "headers": {
-        "Access-Control-Allow-Origin": "*"
+      {
+        "src": "/(.*)",
+        "headers": {
+          "Access-Control-Allow-Origin": "https://test-api-ten-pink.vercel.app",
+          "Access-Control-Allow-Methods": "GET, POST, PUT, DELETE",
+          "Access-Control-Allow-Credentials": "true"
+        }
       }
-    }
-  ]
-}
+    ]
+  }
+  
