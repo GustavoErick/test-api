@@ -18,7 +18,7 @@ app.set('view engine', 'ejs');
 // app.use(cors({credentials: true}));
 
 app.use(cors({
-    origin: ['https://test-api-ten-pink.vercel.app/', 'http://localhost:5173', 'https://main--wtisc.netlify.app', 'https://main--wtisca.netlify.app', 'https://main--wtiscc.netlify.app/', 'https://wtisc2.netlify.app', 'https://wtisc-teste-front.vercel.app', 'https://wtisc-project-front-production.up.railway.app'], // Adicione seus domínios
+    origin: ['https://test-api-ten-pink.vercel.app/', 'http://localhost:5173', 'https://main--wtisc.netlify.app', 'https://main--wtisca.netlify.app', 'https://main--wtiscc.netlify.app/', 'https://wtisc2.netlify.app', 'https://wtisc-teste-front.vercel.app', 'https://wtisc-project-front-production.up.railway.app', 'https://wtisc.vercel.app'], // Adicione seus domínios
     methods: ['GET', 'POST', 'PUT', 'DELETE'],
     credentials: true,
 }));
